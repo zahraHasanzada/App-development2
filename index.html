@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <h2>Flags OF Country</h2>
+    <div class="conteiner">
+      <div id="imag1">
+        <img src="imag/Germany.jpg" alt="afg" />
+      </div>
+      <div id="imag2">
+        <img src="imag/iran.jpg" alt="iran flag's" />
+      </div>
+      <div id="imag3">
+        <img src="imag/us.jpg" alt="us flag's" />
+      </div>
+      <div id="imag4">
+        <img src="imag/turk.jpg" alt="turkey flag's" />
+      </div>
+    </div>
+
+
+    <div class="img-conteiner">
+      <figure>
+        <img src="imag/afg1.jpg" alt="afghanistan" class="main-img" />
+      </figure>
+      <figcaption id="caption">Afganistan</figcaption>
+    </div>
+    <script>
+      var mainImage = document.querySelector('.main-img');
+      var imag1 = document.querySelector('#imag1'); 
+      var imag2 = document.querySelector('#imag2');
+      var imag3 = document.querySelector('#imag3');
+      var imag4 = document.querySelector('#imag4');
+
+      imag1.addEventListener('click' , function(){
+       mainImage.src = 'imag/Germany.jpg';
+       document.querySelector('#caption').textContent = "Germany";
+      
+      } );
+      imag2.addEventListener('click' , function(){
+       mainImage.src = "imag/iran.jpg";
+       document.querySelector('#caption').textContent = "Iran";
+      } );
+      imag3.addEventListener('click' , function(){
+       mainImage.src = "imag/us.jpg";
+       document.querySelector('#caption').textContent = "Amrica";
+      } );
+      imag4.addEventListener('click' , function(){
+       mainImage.src = "imag/turk.jpg";
+       document.querySelector('#caption').textContent = "Turkiye";
+      } );
+      
+      </script>
+  </body>
+</html>
